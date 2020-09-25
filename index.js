@@ -4,7 +4,6 @@ const mongoose = require('mongoose');
 const session = require('express-session')
 const MongoStore = require('connect-mongo')(session);
 
-const User = require('./models/user');
 const {port, secret, dbpwd, dbname} = require('./config');
 const dburl = `mongodb+srv://tume20938:${dbpwd}@cluster0.0are1.gcp.mongodb.net/${dbname}?retryWrites=true&w=majority`;
 const routerSession = require('./router/seloginAPI');
