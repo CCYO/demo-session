@@ -34,6 +34,7 @@ seloginAPI.post('/post', (req, res) => {
         console.log("新資料")
         req.session.firstName = req.body.firstName
         req.session.lastName  = req.body.lastName
+	req.session.times = 1
         return res.redirect('/session');
     }    
 })
